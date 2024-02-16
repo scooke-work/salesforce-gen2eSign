@@ -1,0 +1,7 @@
+<design:component>
+   <design:attribute name="sourceId" label="sourceId" description="Record Id of the source object (Must be opportunity record)" />
+    <design:attribute name="myContentDocId" label="myContentDocId" description="ContentDocId of the document that will be used for signing" />
+    <design:attribute name="envId" label="envId" description="DocuSign envelope Id" />
+    <design:attribute name="redirectUrl" label="redirectUrl" description="Where to send user after signing" />
+    <design:attribute name="envUrl" label="envUrl" description="DocuSign embedded signing Url" />
+</design:component>

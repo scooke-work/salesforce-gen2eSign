@@ -1,0 +1,4 @@
+<design:component>
+   <design:attribute name="sourceId" label="sourceId" description="Record Id of the source object (Must be opportunity record)" />
+   <design:attribute name="generatedContentDocId" label="generatedContentDocId" description="The ContentDocId of the newly created document" />     
+</design:component>

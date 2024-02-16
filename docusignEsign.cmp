@@ -1,0 +1,7 @@
+<aura:component implements="lightning:availableForFlowActions"  controller="docusignEsign" access="global">
+    <aura:attribute name="sourceId" type="String" required="true" />
+    <aura:attribute name="myContentDocId" type="String" required="true" />
+    <aura:attribute name="envId" type="String" required="false" />
+    <aura:attribute name="redirectUrl" type="String" required="false" />
+    <aura:attribute name="envUrl" type="String" required="false" />
+</aura:component>
