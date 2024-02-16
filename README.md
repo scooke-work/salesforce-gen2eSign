@@ -17,4 +17,8 @@ There are 3 data points that must be replaced in this code in order for it to wo
 ![Alt text](/photos/docusignAccountId.png?raw=true "Optional Title")
 
 
+After you have completed those steps you are ready to create your flow.  There are 2 actions you will need to add:
+1. docusignGen is the first action which will need to include the opportunity record Id you will be creating the document from.  ![Alt text](/photos/docusignGenFlow.png?raw=true "Optional Title")
+2. docusignEsign action is next which will need to reference the docusignGen actions output of generatedContentDocId in order to sign the newly generated document  ![Alt text](/photos/docusigneSignFlow.png?raw=true "Optional Title")
+
 
