@@ -18,13 +18,17 @@ public class docusignGen {
                 jsGen.writeStartObject();
                 jsGen.writeStringField('Id', oppRec.Id);
                 jsGen.writeStringField('OpportunityName', oppRec.Name);
-                jsGen.writeStringField('Amount', convertDecimal(oppRec.Amount));  
                 // Need to include IF statements for field values that may be blank to prevent errors
+                if(oppRec.Amount == null) {
+                    jsGen.writeNullField('Amount'); 
+                } else {
+                    jsGen.writeStringField('Amount', convertDecimal(oppRec.Amount));
+                }  
                 if(oppRec.Type == null) {
                     jsGen.writeNullField('Type'); 
                 } else {
                     jsGen.writeStringField('Type', oppRec.Type);
-                }   
+                }  
                 DateTime dtCloseDate = oppRec.CloseDate.AddDays(1);
                 String frmCloseDate = dtCloseDate.format('MM/dd/yyyy');        
                 jsGen.writeStringField ('CloseDate', frmCloseDate);
